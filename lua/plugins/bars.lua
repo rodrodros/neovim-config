@@ -37,15 +37,14 @@ return {
 						bufferline.style_preset.default,
 					},
 					separator_style = "slant",
-					-- I can never get this to work
-					offsets = {
-						{
-							text = "File Explorer",
-							filetype = "NvimTree",
-							separator = true,
-							highlight = "Directory",
-						},
-					},
+					-- offsets = {
+					-- 	{
+					-- 		text = "File Explorer",
+					-- 		filetype = "NvimTree",
+					-- 		separator = true,
+					-- 		highlight = "Directory",
+					-- 	},
+					-- },
 					hover = {
 						enabled = true,
 						delay = 200,
@@ -54,7 +53,7 @@ return {
 				},
 			})
 			-- BufferLine (move buffers around)
-			vim.keymap.set("n", "<space>d", "<Cmd>Bdelete<CR>", { noremap = true, silent = true })
+			vim.keymap.set("n", "<leader>d", "<Cmd>Bdelete<CR>", { noremap = true, silent = true })
 			vim.keymap.set("n", "<leader>bb", "<Cmd>BufferLineTogglePin<CR>", { noremap = true, silent = true })
 			vim.keymap.set("n", "<leader>bp", "<Cmd>BufferLinePick<CR>", { noremap = true, silent = true })
 			vim.keymap.set("n", "<leader>bP", "<Cmd>BufferLinePickClose<CR>", { noremap = true, silent = true })

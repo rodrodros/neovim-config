@@ -16,7 +16,7 @@ return {
 			vim.keymap.set("n", "<space>f", builtin.find_files, {})
 			vim.keymap.set("n", "<space>l", builtin.live_grep, {})
 			vim.keymap.set("n", "<space>b", builtin.buffers, {})
-			vim.keymap.set("n", "<space>sd", builtin.diagnostics, {})
+			vim.keymap.set("n", "<space>ds", builtin.diagnostics, {})
 			-- least used ones
 			vim.keymap.set("n", "<leader>ff", builtin.current_buffer_fuzzy_find, {})
 			vim.keymap.set("n", "<leader>fg", builtin.grep_string, {})
