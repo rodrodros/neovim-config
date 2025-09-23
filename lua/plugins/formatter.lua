@@ -10,6 +10,7 @@ return {
 					go = { "gofumpt" },
 					toml = { "taplo" },
 					rust = { "rustfmt" },
+					yaml = { "yamlfmt" },
 				},
 			})
 

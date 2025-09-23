@@ -74,6 +74,8 @@ return {
 			vim.lsp.enable("lua_ls")
 			-- TOML
 			vim.lsp.enable("taplo")
+			-- YAML
+			vim.lsp.enable("yamlls")
 			-- Bash
 			vim.lsp.enable("bashls")
 			-- LaTex

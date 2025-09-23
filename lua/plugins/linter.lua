@@ -9,6 +9,7 @@ return {
 			lint.linters_by_ft = {
 				-- I don't know if this makes sense
 				-- gitcommit = { "commitlint" },
+				-- yaml = "yaml"
 			}
 
 			vim.api.nvim_create_autocmd({ "BufReadPost", "BufWritePost", "InsertLeave" }, {
