@@ -1,17 +1,19 @@
 return {
 	{
 		"nvim-treesitter/nvim-treesitter",
+		lazy = false,
 		build = ":TSUpdate",
-		config = function()
-			local configs = require("nvim-treesitter.configs")
-			configs.setup({
-				highlight = {
-					enable = true,
-				},
-				autotag = {
-					enable = true,
-				},
+		init = function()
+			-- starts treesitter highlighting
+			vim.api.nvim_create_autocmd("FileType", {
+				pattern = { "go", "rust" },
+				callback = function()
+					vim.treesitter.start()
+				end,
 			})
 		end,
+	},
+	{
+		"nvim-treesitter/nvim-treesitter-context",
 	},
 }
