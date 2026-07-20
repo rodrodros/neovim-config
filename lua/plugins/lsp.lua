@@ -82,6 +82,8 @@ return {
 			vim.lsp.enable("texlab")
 			-- Markdown
 			vim.lsp.enable("marksman")
+			-- Swift
+			vim.lsp.enable("sourcekit")
 		end,
 	},
 
